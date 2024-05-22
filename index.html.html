@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice Cream Parlour</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #343a40;
+        }
+        h2 {
+            color: #495057;
+            border-bottom: 2px solid #e9ecef;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .grid-item {
+            background: #e9ecef;
+            padding: 20px;
+            border-radius: 5px;
+            transition: transform 0.2s;
+        }
+        .grid-item:hover {
+            transform: scale(1.05);
+        }
+        .ice-cream-title {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            color: #343a40;
+        }
+        .price {
+            font-weight: bold;
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+        .flavours {
+            color: #6c757d;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Welcome to Our Ice Cream Parlour</h1>
+    
+    <h2>Types of Ice Cream</h2>
+    <div class="grid-container">
+        <div class="grid-item">
+            <div class="ice-cream-title">Gelato</div>
+            <div class="price">$5.00</div>
+            <div class="flavours">Flavours: Vanilla, Chocolate, Hazelnut, Pistachio</div>
+        </div>
+        <div class="grid-item">
+            <div class="ice-cream-title">Sorbet</div>
+            <div class="price">$4.00</div>
+            <div class="flavours">Flavours: Lemon, Raspberry, Mango</div>
+        </div>
+        <div class="grid-item">
+            <div class="ice-cream-title">Frozen Yogurt</div>
+            <div class="price">$4.50</div>
+            <div class="flavours">Flavours: Strawberry, Blueberry, Plain</div>
+        </div>
+        <div class="grid-item">
+            <div class="ice-cream-title">Sherbet</div>
+            <div class="price">$3.50</div>
+            <div class="flavours">Flavours: Orange, Lime, Rainbow</div>
+        </div>
+        <div class="grid-item">
+            <div class="ice-cream-title">Soft Serve</div>
+            <div class="price">$3.00</div>
+            <div class="flavours">Flavours: Vanilla, Chocolate, Twist</div>
+        </div>
+        <div class="grid-item">
+            <div class="ice-cream-title">Kulfi</div>
+            <div class="price">$5.50</div>
+            <div class="flavours">Flavours: Malai, Mango, Pistachio</div>
+        </div>
+        <div class="grid-item">
+            <div class="ice-cream-title">Italian Ice</div>
+            <div class="price">$3.00</div>
+            <div class="flavours">Flavours: Cherry, Lemon, Blue Raspberry</div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
